@@ -1,16 +1,37 @@
-# React + Vite
+# We Madam
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Homestyle Bengali kitchen website — a unit of UUC Hospitality, Kolkata.
 
-Currently, two official plugins are available:
+Built with plain HTML, CSS, and JavaScript, using Bootstrap 5 for the grid,
+form controls, and responsive utilities. No build step or framework required.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Structure
 
-## React Compiler
+```
+index.html      Home page (hero, units, story, dishes, gallery, menu, why us,
+                 reviews, reservation form, location)
+gallery.html     Filterable photo gallery
+contact.html     Contact page with enquiry form
+css/style.css    Theme tokens, layout, scroll-reveal animations
+js/icons.js      Tiny inline-SVG icon set (no icon font/library dependency)
+js/main.js       Navbar behavior, scroll reveal, tabs, filters, forms
+images/          Site photography and logo
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Running locally
 
-## Expanding the Oxlint configuration
+No build step — just serve the folder statically, e.g.:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+```
+npx serve .
+```
+
+or open `index.html` directly in a browser.
+
+## Notes
+
+- Bootstrap 5 and Google Fonts are loaded from CDN.
+- Scroll animations use `IntersectionObserver` and respect
+  `prefers-reduced-motion`.
+- The reservation and contact forms are front-end only (no backend); submitting
+  shows a success state but does not send data anywhere yet.
