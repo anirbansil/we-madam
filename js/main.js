@@ -40,8 +40,8 @@
       });
     });
 
-    // Close the mobile menu after tapping a link.
-    mobileMenu.querySelectorAll(".nav-link, .btn-turmeric").forEach((link) => {
+    // Close the mobile menu after tapping a link (but not the Our Units toggle).
+    mobileMenu.querySelectorAll(".nav-link:not(.units-toggle), .btn-turmeric").forEach((link) => {
       link.addEventListener("click", () => {
         const collapse = bootstrap.Collapse.getOrCreateInstance(mobileMenu);
         collapse.hide();
@@ -56,6 +56,13 @@
     if (target === page || (target === "index.html" && page === "")) {
       link.classList.add("active");
     }
+  });
+  document.querySelectorAll(".site-nav [data-nav-group]").forEach((link) => {
+    const group = (link.getAttribute("data-nav-group") || "")
+      .toLowerCase()
+      .split(",")
+      .map((s) => s.trim());
+    if (group.includes(page)) link.classList.add("active");
   });
 
   /* ---------- scroll reveal ---------- */
@@ -120,6 +127,7 @@
 
   /* ---------- menu category tabs ---------- */
   const menuTabs = document.querySelectorAll("[data-menu-tab]");
+  const menuWordEl = document.querySelector("[data-menu-word-target]");
   if (menuTabs.length) {
     menuTabs.forEach((tab) => {
       tab.addEventListener("click", () => {
@@ -138,23 +146,46 @@
             });
           }
         });
+        if (menuWordEl) {
+          const word = tab.getAttribute("data-menu-word");
+          if (word) {
+            menuWordEl.style.transition = "none";
+            menuWordEl.style.opacity = "0";
+            requestAnimationFrame(() => {
+              menuWordEl.textContent = word;
+              menuWordEl.style.transition = "opacity .4s ease";
+              menuWordEl.style.opacity = "1";
+            });
+          }
+        }
       });
     });
   }
 
-  /* ---------- gallery filter (gallery.html) ---------- */
-  const filterPills = document.querySelectorAll("[data-filter]");
-  if (filterPills.length) {
-    filterPills.forEach((pill) => {
-      pill.addEventListener("click", () => {
-        const cat = pill.getAttribute("data-filter");
-        filterPills.forEach((p) => p.classList.remove("active"));
-        pill.classList.add("active");
-        document.querySelectorAll("[data-cat]").forEach((item) => {
-          const show = cat === "All" || item.getAttribute("data-cat") === cat;
-          item.hidden = !show;
+  /* ---------- gallery unit tabs (gallery.html) ---------- */
+  const unitTabs = document.querySelectorAll("[data-unit-tab]");
+  if (unitTabs.length) {
+    unitTabs.forEach((tab) => {
+      tab.addEventListener("click", () => {
+        const targetId = tab.getAttribute("data-unit-tab");
+        unitTabs.forEach((t) => t.classList.remove("active"));
+        tab.classList.add("active");
+        document.querySelectorAll("[data-unit-panel]").forEach((panel) => {
+          const isTarget = panel.getAttribute("data-unit-panel") === targetId;
+          panel.classList.toggle("active", isTarget);
         });
       });
     });
   }
+
+  /* ---------- mobile "Our Units" submenu toggle ---------- */
+  document.querySelectorAll(".units-toggle").forEach((btn) => {
+    const sublist = document.getElementById(btn.getAttribute("aria-controls"));
+    if (!sublist) return;
+    btn.addEventListener("click", () => {
+      const open = btn.getAttribute("aria-expanded") === "true";
+      btn.setAttribute("aria-expanded", String(!open));
+      sublist.hidden = open;
+    });
+  });
 })();

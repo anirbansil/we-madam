@@ -33,7 +33,7 @@
   --veg-500: #3f8a4a;
   --nonveg-500: #a83828;
 
-  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Bodoni Moda", Georgia, serif;
   --font-bengali: "Noto Sans Bengali", sans-serif;
   --font-sans: "Jost", "Helvetica Neue", Arial, sans-serif;
 
@@ -284,6 +284,9 @@ a {
   gap: 0.4rem;
   transition: all 0.3s ease;
   border: none;
+  width: fit-content;
+  align-self: flex-start;
+  white-space: nowrap;
 }
 .btn-pill-sm:hover {
   background-color: var(--turmeric-300);
@@ -1394,4 +1397,597 @@ a {
 /* offset anchored sections so the fixed navbar never covers the heading */
 main section[id] {
   scroll-margin-top: 90px;
+}
+
+/* ---------- nav dropdown (Our Units) ---------- */
+.site-nav .nav-item.dropdown .dropdown-toggle::after {
+  margin-left: 0.4rem;
+  vertical-align: 0.1em;
+}
+.site-nav .dropdown-menu {
+  background: rgba(13, 11, 8, 0.98);
+  border: 1px solid var(--ink-700);
+  border-radius: 1rem;
+  padding: 0.5rem;
+  margin-top: 0.75rem;
+  min-width: 14rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+.site-nav .dropdown-item {
+  color: rgba(244, 236, 216, 0.8);
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  border-radius: 0.6rem;
+  padding: 0.7rem 1rem;
+  transition: all 0.25s ease;
+}
+.site-nav .dropdown-item:hover,
+.site-nav .dropdown-item:focus {
+  background: rgba(245, 180, 0, 0.12);
+  color: var(--turmeric-400);
+}
+.site-nav .dropdown-item.active {
+  background: rgba(245, 180, 0, 0.12);
+  color: var(--turmeric-400);
+}
+.site-nav .dropdown-item .unit-sub {
+  color: rgba(244, 236, 216, 0.4);
+  font-size: 0.7rem;
+  margin-left: 0.35rem;
+}
+#mobileMenu .units-sublist {
+  padding-left: 1rem;
+  border-left: 2px solid var(--ink-700);
+  margin: 0.25rem 0 0.5rem;
+}
+#mobileMenu .units-sublist .nav-link {
+  padding: 0.65rem 0 !important;
+  font-size: 0.9rem;
+  border-bottom: none;
+}
+#mobileMenu .units-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+#mobileMenu .units-toggle .chev {
+  transition: transform 0.3s ease;
+}
+#mobileMenu .units-toggle[aria-expanded="true"] .chev {
+  transform: rotate(180deg);
+}
+
+/* ---------- detail card (What You'll Find / Games & Activities / Food & Catering) ---------- */
+.detail-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: var(--turmeric-400);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.detail-tag.on-light {
+  color: var(--spice-600);
+}
+.detail-card {
+  border-radius: 1rem;
+  border: 1px solid var(--ink-800);
+  background: rgba(34, 29, 21, 0.5);
+  padding: 1.75rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.4s ease;
+}
+.detail-card:hover {
+  border-color: rgba(245, 180, 0, 0.4);
+  background: var(--ink-900);
+  transform: translateY(-3px);
+}
+.detail-card.on-light {
+  border: 1px solid var(--spice-200);
+  background: var(--cream-50);
+}
+.detail-card.on-light:hover {
+  border-color: var(--spice-400);
+  background: var(--cream-50);
+  box-shadow: 0 20px 40px -18px rgba(22, 19, 14, 0.15);
+}
+.detail-card .media {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin: -0.25rem -0.25rem 1.25rem;
+}
+.detail-card .media img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-premium);
+}
+.detail-card:hover .media img {
+  transform: scale(1.08);
+}
+.detail-card h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 0.5rem 0 0.6rem;
+}
+.detail-card.on-light h3 {
+  color: var(--ink-900);
+}
+.detail-card:not(.on-light) h3 {
+  color: var(--cream-50);
+}
+.detail-card p {
+  flex: 1;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+.detail-card:not(.on-light) p {
+  color: rgba(244, 236, 216, 0.6);
+}
+.detail-card.on-light p {
+  color: var(--ink-600);
+}
+.detail-card .foot {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(224, 168, 116, 0.2);
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--turmeric-400);
+}
+.detail-card.on-light .foot {
+  border-top-color: rgba(224, 168, 116, 0.3);
+  color: var(--spice-600);
+}
+
+/* ---------- split content (corner-for-everyday / made-for-milestones / play-under-lights) ---------- */
+.split-media {
+  position: relative;
+}
+.split-media img {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 30px 60px -20px rgba(22, 19, 14, 0.3);
+}
+.split-badge {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1rem;
+  background: var(--ink-950);
+  border-radius: 1rem;
+  padding: 1.25rem 1.75rem;
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(245, 180, 0, 0.2);
+}
+.split-badge .big {
+  font-weight: 700;
+  font-size: 1.75rem;
+  color: var(--turmeric-400);
+  margin: 0;
+  line-height: 1.1;
+}
+.split-badge small {
+  color: var(--cream-200);
+  font-size: 0.68rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.check-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ink-700);
+  font-size: 0.95rem;
+}
+.check-item.on-dark {
+  color: rgba(244, 236, 216, 0.8);
+}
+.check-item svg {
+  color: var(--spice-600);
+  flex-shrink: 0;
+}
+.check-item.on-dark svg {
+  color: var(--turmeric-400);
+}
+
+/* ---------- CTA banner (Make your next visit a little more special) ---------- */
+.cta-banner {
+  background: linear-gradient(120deg, var(--spice-600), var(--spice-700));
+  padding: 3rem 0;
+}
+.cta-banner .eyebrow-inline {
+  font-family: var(--font-bengali);
+  color: rgba(255, 253, 249, 0.75);
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+}
+.cta-banner h2 {
+  color: var(--cream-50);
+  font-weight: 700;
+  font-size: clamp(1.5rem, 3vw, 2.1rem);
+  margin: 0;
+}
+.cta-banner .btn-cta {
+  background: var(--ink-950);
+  color: var(--cream-50);
+  border-radius: 999px;
+  padding: 1rem 1.75rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+.cta-banner .btn-cta:hover {
+  background: #000;
+  transform: scale(1.03);
+}
+
+/* ---------- inside-the-experience triptych ---------- */
+.triptych {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+@media (max-width: 767.98px) {
+  .triptych {
+    grid-template-columns: 1fr;
+  }
+}
+.triptych .frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 1rem;
+  aspect-ratio: 4 / 5;
+}
+.triptych .frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-premium);
+}
+.triptych .frame:hover img {
+  transform: scale(1.08);
+}
+.triptych .frame.wide {
+  grid-column: span 2;
+  aspect-ratio: auto;
+}
+@media (max-width: 767.98px) {
+  .triptych .frame.wide {
+    grid-column: span 1;
+    aspect-ratio: 4 / 5;
+  }
+}
+
+/* ---------- facility cards ---------- */
+.facility-card {
+  border-radius: 1rem;
+  border: 1px solid var(--spice-200);
+  background: var(--cream-50);
+  padding: 1.75rem;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.facility-card:hover {
+  box-shadow: 0 20px 40px -18px rgba(22, 19, 14, 0.12);
+  transform: translateY(-3px);
+}
+.facility-card.on-dark {
+  background: rgba(34, 29, 21, 0.5);
+  border-color: var(--ink-800);
+}
+.facility-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.25rem;
+  width: 3.25rem;
+  border-radius: 999px;
+  background: var(--spice-100);
+  color: var(--spice-600);
+  margin-bottom: 1rem;
+}
+.facility-card.on-dark .facility-icon {
+  background: rgba(245, 180, 0, 0.15);
+  color: var(--turmeric-400);
+}
+.facility-card h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 0.4rem;
+}
+.facility-card.on-dark h3 {
+  color: var(--cream-50);
+}
+.facility-card p {
+  font-size: 0.88rem;
+  color: var(--ink-600);
+  margin: 0;
+  line-height: 1.6;
+}
+.facility-card.on-dark p {
+  color: rgba(244, 236, 216, 0.6);
+}
+
+/* ---------- hall / tournament cards (shared icon-badge style) ---------- */
+.badge-card {
+  border-radius: 1rem;
+  border: 1px solid var(--ink-800);
+  background: rgba(34, 29, 21, 0.5);
+  padding: 1.75rem;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.badge-card:hover {
+  border-color: rgba(245, 180, 0, 0.35);
+  transform: translateY(-3px);
+}
+.badge-card .icon-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.75rem;
+  width: 2.75rem;
+  border-radius: 999px;
+  background: rgba(245, 180, 0, 0.15);
+  color: var(--turmeric-400);
+  margin-bottom: 1rem;
+}
+.badge-card h3 {
+  color: var(--cream-50);
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+.badge-card .kicker-sm {
+  color: var(--turmeric-400);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  display: block;
+}
+.badge-card p {
+  color: rgba(244, 236, 216, 0.6);
+  font-size: 0.9rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+.badge-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.badge-card ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: rgba(244, 236, 216, 0.7);
+  font-size: 0.85rem;
+}
+.badge-card ul li svg {
+  color: var(--turmeric-400);
+  flex-shrink: 0;
+}
+.badge-card .link-cta {
+  color: var(--turmeric-400);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  transition: gap 0.3s ease;
+}
+.badge-card .link-cta:hover {
+  gap: 0.65rem;
+  color: var(--turmeric-300);
+}
+.badge-card .media {
+  border-radius: 0.75rem;
+  overflow: hidden;
+  margin-bottom: 1.25rem;
+}
+.badge-card .media img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  transition: transform 0.8s var(--ease-premium);
+}
+.badge-card:hover .media img {
+  transform: scale(1.06);
+}
+
+/* ---------- simple event cards ---------- */
+.event-card {
+  border-radius: 1rem;
+  border: 1px solid var(--spice-200);
+  background: var(--cream-50);
+  padding: 1.75rem;
+  height: 100%;
+  transition: all 0.4s ease;
+}
+.event-card:hover {
+  box-shadow: 0 20px 40px -18px rgba(22, 19, 14, 0.1);
+  transform: translateY(-3px);
+}
+.event-card h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 0.5rem;
+}
+.event-card p {
+  font-size: 0.9rem;
+  color: var(--ink-600);
+  margin: 0;
+  line-height: 1.6;
+}
+
+/* ---------- leaderboard ---------- */
+.leaderboard-card {
+  border-radius: 1rem;
+  border: 1px solid var(--ink-800);
+  background: rgba(34, 29, 21, 0.5);
+  padding: 2rem;
+}
+.leaderboard-card h3 {
+  color: var(--cream-50);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin-bottom: 1.25rem;
+}
+.leaderboard-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--ink-800);
+}
+.leaderboard-row:first-of-type {
+  border-top: none;
+}
+.leaderboard-rank {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.75rem;
+  width: 1.75rem;
+  border-radius: 999px;
+  background: var(--ink-800);
+  color: rgba(244, 236, 216, 0.7);
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-right: 0.85rem;
+}
+.leaderboard-row:first-child .leaderboard-rank {
+  background: var(--turmeric-500);
+  color: var(--ink-950);
+}
+.leaderboard-name {
+  color: var(--cream-100);
+  font-size: 0.95rem;
+  flex: 1;
+}
+.leaderboard-pts {
+  color: var(--turmeric-400);
+  font-weight: 700;
+  font-size: 0.9rem;
+}
+
+/* ---------- contact "let's make a plan" ---------- */
+.plan-info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.85rem;
+  margin-bottom: 1.5rem;
+}
+.plan-info-item .icon {
+  color: var(--spice-600);
+  flex-shrink: 0;
+  margin-top: 0.15rem;
+}
+.plan-info-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink-900);
+  margin-bottom: 0.15rem;
+}
+.plan-info-item p {
+  color: var(--ink-600);
+  font-size: 0.92rem;
+  margin: 0;
+}
+.plan-form-card {
+  border-radius: 1.25rem;
+  background: var(--ink-950);
+  color: var(--cream-100);
+  padding: 2.5rem;
+}
+.plan-form-card h3 {
+  color: var(--cream-50);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+.plan-form-card > p {
+  color: rgba(244, 236, 216, 0.6);
+  margin-bottom: 1.75rem;
+}
+.plan-form-card label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: rgba(244, 236, 216, 0.8);
+  margin-bottom: 0.4rem;
+  display: block;
+}
+.plan-form-card .form-control,
+.plan-form-card .form-select {
+  background: rgba(253, 249, 238, 0.04);
+  border: 1px solid var(--ink-600);
+  color: var(--cream-50);
+  border-radius: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+.plan-form-card .form-control::placeholder {
+  color: rgba(244, 236, 216, 0.3);
+}
+.plan-form-card .form-control:focus,
+.plan-form-card .form-select:focus {
+  border-color: var(--turmeric-500);
+  box-shadow: none;
+  background: rgba(253, 249, 238, 0.04);
+  color: var(--cream-50);
+}
+
+/* ---------- gallery unit tabs (gallery.html) ---------- */
+.unit-tab {
+  border-radius: 999px;
+  padding: 0.7rem 1.5rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  border: 1px solid var(--spice-300);
+  color: var(--ink-600);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.unit-tab:hover {
+  border-color: var(--spice-500);
+  color: var(--spice-600);
+}
+.unit-tab.active {
+  background: var(--turmeric-500);
+  color: var(--ink-950);
+  border-color: var(--turmeric-500);
+  box-shadow: 0 10px 25px -8px rgba(245, 180, 0, 0.3);
+}
+.unit-gallery-row {
+  display: none;
+}
+.unit-gallery-row.active {
+  display: grid;
 }

@@ -1,0 +1,436 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Banquet — We Madam</title>
+    <meta
+      name="description"
+      content="Beautiful spaces, thoughtful service, and feasts made for milestones. From weddings of 120 to conferences of 40, We Madam holds room for every celebration."
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-nav">
+      <nav class="navbar navbar-expand-lg container-fluid px-4 px-lg-5">
+        <a class="navbar-brand m-0 p-0" href="index.html">
+          <img src="images/logo.png" alt="We Madam logo" />
+        </a>
+
+        <div class="d-flex align-items-center gap-3 order-lg-3">
+          <a href="contact.html" class="btn-book d-none d-xl-inline-flex">Book a Table</a>
+          <button
+            class="navbar-toggler-custom d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+          >
+            <span data-icon="menu" data-icon-size="28"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-nav mx-auto d-none d-lg-flex flex-row align-items-center order-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="index.html" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-nav-group="cafe.html,banquet.html,game-zone.html"
+              aria-expanded="false"
+              >Our Units</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-nav-link="index.html" href="index.html">Restaurant <span class="unit-sub">&middot; Home</span></a></li>
+              <li><a class="dropdown-item" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
+              <li><a class="dropdown-item active" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
+              <li><a class="dropdown-item" data-nav-link="game-zone.html" href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="gallery.html" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="contact.html" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="collapse d-lg-none" id="mobileMenu">
+        <ul class="navbar-nav px-4 pb-4 pt-2">
+          <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <button class="nav-link units-toggle" type="button" aria-expanded="true" aria-controls="mobileUnitsSublist">
+              Our Units <span class="chev" data-icon="arrow-down" data-icon-size="16"></span>
+            </button>
+            <ul class="units-sublist navbar-nav" id="mobileUnitsSublist">
+              <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Restaurant &middot; Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="game-zone.html" href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" data-nav-link="gallery.html" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav-link="contact.html" href="contact.html">Contact Us</a></li>
+          <li class="pt-3"><a href="contact.html" class="btn-turmeric w-100 justify-content-center">Book a Table</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" style="min-height: 640px">
+        <div class="hero-media">
+          <img src="images/unit-banquet.avif" alt="Our banquet hall" />
+          <div class="gradient-v"></div>
+          <div class="gradient-h"></div>
+        </div>
+        <div class="hero-topline"></div>
+        <div class="hero-content" style="padding-top: 6rem">
+          <p class="font-bengali mb-2" style="color: var(--turmeric-400); font-size: 1.125rem" data-reveal="fade-up-sm">
+            ভোজ ও উৎসব
+          </p>
+          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 6rem)" data-reveal="mask-up" data-delay="0.1">
+            The Banquet
+          </h1>
+          <div class="ornament my-4 on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+          <p class="hero-lede text-shadow-md" data-reveal="fade-up" data-delay="0.3">
+            Beautiful spaces, thoughtful service, and feasts made for milestones. From
+            weddings of 120 to conferences of 40 &mdash; we hold room for every kind of celebration.
+          </p>
+          <div class="mt-4" data-reveal="fade-up" data-delay="0.45">
+            <a href="#halls" class="btn-turmeric">Explore the Banquet <span data-icon="arrow-down" data-icon-size="16"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= MADE FOR MILESTONES ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="split-media" data-reveal="zoom-in">
+                <img src="images/unit-banquet.avif" alt="Our banquet hall, set for a celebration" loading="lazy" />
+                <div class="split-badge" data-reveal="scale-in" data-delay="0.4">
+                  <p class="big">120</p>
+                  <small>Guests at Full Capacity</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="eyebrow" data-reveal="fade-up-sm">একটি সুন্দর অভিজ্ঞতা</p>
+              <h2 class="section-title" data-delay="0.08">Made for milestones</h2>
+              <p class="section-subtitle mb-4" data-reveal="fade-up" data-delay="0.15">
+                Our banquet floor is where Kolkata comes to celebrate. Weddings, annaprashan
+                ceremonies, birthdays, and corporate galas &mdash; each one handled with the
+                warmth and attention of a family hosting its own. Heritage decor, traditional
+                catering, and a dedicated events team that treats your day as its own.
+              </p>
+              <div class="d-flex flex-wrap gap-4" data-reveal="fade-up" data-delay="0.25">
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Thoughtful hospitality</span>
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Made for memories</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOD & CATERING ================= -->
+      <section class="bg-ink section-pad position-relative bg-paper-texture">
+        <div class="container position-relative">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">খাদ্য ও ক্যাটারিং</p>
+            <h2 class="section-title on-dark" data-delay="0.08">Food &amp; Catering</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
+              From heritage Bengali thalis to fully custom menus &mdash; catered with the same
+              care as our restaurant kitchen.
+            </p>
+          </div>
+
+          <div class="row g-4" data-reveal-stagger="0.1">
+            <div class="col-md-6 col-lg-3" data-reveal="fade-up">
+              <div class="detail-card">
+                <div class="media"><img src="images/dish-ilish.avif" alt="Bengali cuisine spread" loading="lazy" /></div>
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Bengali Cuisine</h3>
+                <p>Heritage Bengali menus &mdash; from shorshe ilish and kosha mangsho to mishti doi, catered with the same care as our restaurant kitchen.</p>
+                <div class="foot">Veg &amp; Non-Veg</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-reveal="fade-up">
+              <div class="detail-card">
+                <div class="media"><img src="images/gallery-biryani.avif" alt="Indian cuisine spread" loading="lazy" /></div>
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Indian Cuisine</h3>
+                <p>A wide Indian spread &mdash; North Indian, Mughlai, and regional classics &mdash; tailored to your guest count and preferences.</p>
+                <div class="foot">Custom menus</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-reveal="fade-up">
+              <div class="detail-card">
+                <div class="media"><img src="images/gallery-dal.avif" alt="Continental cuisine spread" loading="lazy" /></div>
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Continental Cuisine</h3>
+                <p>Continental and fusion options for modern celebrations &mdash; pastas, grills, salads, and live counters.</p>
+                <div class="foot">Live counters available</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3" data-reveal="fade-up">
+              <div class="detail-card">
+                <div class="media"><img src="images/gallery-thali.avif" alt="Custom catering spread" loading="lazy" /></div>
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Custom Catering</h3>
+                <p>Tell us your vision, your budget, and your guest list &mdash; our events team will build a menu around it.</p>
+                <div class="foot">Free consultation</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INSIDE THE EXPERIENCE ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">ভিতরের ঝলক</p>
+            <h2 class="section-title" data-delay="0.08">Inside the experience</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+          </div>
+          <div class="triptych" data-reveal-stagger="0.1">
+            <div class="frame wide" data-reveal="scale-in">
+              <img src="images/unit-banquet.avif" alt="Our banquet hall, ready for guests" loading="lazy" />
+            </div>
+            <div class="frame" data-reveal="scale-in">
+              <img src="images/gallery-city.avif" alt="Heritage architecture of Kolkata" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+          <div data-reveal="fade-up">
+            <p class="eyebrow-inline">আপনার অনুষ্ঠানের জন্য প্রস্তুত</p>
+            <h2>Make your next celebration a little more special.</h2>
+          </div>
+          <div data-reveal="fade-up" data-delay="0.1">
+            <a href="contact.html" class="btn-cta">Enquire About the Banquet <span data-icon="arrow-up-right" data-icon-size="16"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FACILITIES & AMENITIES ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">সুবিধা</p>
+            <h2 class="section-title" data-delay="0.08">Facilities &amp; Amenities</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle mx-auto" data-reveal="fade-up" data-delay="0.3">Everything a celebration needs, taken care of.</p>
+          </div>
+          <div class="row g-4" data-reveal-stagger="0.1">
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="square-parking" data-icon-size="26"></div>
+                <h3>Parking</h3>
+                <p>On-site parking for guests, with valet on request.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="wind" data-icon-size="26"></div>
+                <h3>Air Conditioning</h3>
+                <p>Fully climate-controlled halls, year round.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="volume-2" data-icon-size="26"></div>
+                <h3>Sound System</h3>
+                <p>Professional PA and mic setup for speeches and music.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="lightbulb" data-icon-size="26"></div>
+                <h3>Professional Lighting</h3>
+                <p>Chandeliers and adjustable mood lighting for every event.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= BANQUET HALLS & SPACES ================= -->
+      <section class="bg-ink section-pad position-relative bg-paper-texture">
+        <div class="container position-relative">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">আমাদের হল</p>
+            <h2 class="section-title on-dark" data-delay="0.08">Banquet Halls &amp; Spaces</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
+              Three distinct spaces &mdash; each with its own character, capacity, and charm.
+            </p>
+          </div>
+          <div class="row g-4" data-reveal-stagger="0.12">
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="door-open" data-icon-size="22"></div>
+                <h3>The Heritage Hall</h3>
+                <p>Our grand hall &mdash; chandeliers, heritage decor, and space for up to 120 guests. Ideal for weddings and receptions.</p>
+                <ul>
+                  <li><span data-icon="users" data-icon-size="14"></span> 120 guests</li>
+                  <li><span data-icon="square-parking" data-icon-size="14"></span> 2,400 sq. ft.</li>
+                </ul>
+                <a href="contact.html" class="link-cta">Enquire <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="door-open" data-icon-size="22"></div>
+                <h3>The College Room</h3>
+                <p>An intimate hall for smaller gatherings &mdash; engagements, birthdays, and corporate events.</p>
+                <ul>
+                  <li><span data-icon="users" data-icon-size="14"></span> 60 guests</li>
+                  <li><span data-icon="square-parking" data-icon-size="14"></span> 1,200 sq. ft.</li>
+                </ul>
+                <a href="contact.html" class="link-cta">Enquire <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="door-open" data-icon-size="22"></div>
+                <h3>The Rooftop Terrace</h3>
+                <p>Open-air rooftop for cocktail evenings, mehendi ceremonies, and sunset receptions.</p>
+                <ul>
+                  <li><span data-icon="users" data-icon-size="14"></span> 80 guests</li>
+                  <li><span data-icon="square-parking" data-icon-size="14"></span> 1,800 sq. ft.</li>
+                </ul>
+                <a href="contact.html" class="link-cta">Enquire <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= EVENTS WE HOST ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">অনুষ্ঠান</p>
+            <h2 class="section-title" data-delay="0.08">Events We Host</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle mx-auto" data-reveal="fade-up" data-delay="0.3">
+              From the biggest day of your life to the smallest milestone &mdash; we have a
+              space and a menu for it.
+            </p>
+          </div>
+          <div class="row g-4" data-reveal-stagger="0.08">
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Weddings</h3><p>Full-scale wedding celebrations with heritage decor and traditional catering.</p></div>
+            </div>
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Receptions</h3><p>Elegant reception setups for intimate and grand gatherings alike.</p></div>
+            </div>
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Engagements</h3><p>Close-knit engagement ceremonies in our intimate halls.</p></div>
+            </div>
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Birthday Parties</h3><p>From first birthdays to milestone years &mdash; we host them all.</p></div>
+            </div>
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Corporate Events</h3><p>Conferences, off-sites, and corporate galas with full AV support.</p></div>
+            </div>
+            <div class="col-sm-6 col-lg-4" data-reveal="fade-up">
+              <div class="event-card"><h3>Anniversaries</h3><p>Celebrate the years with an evening designed around your story.</p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="top-line"></div>
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3">
+            <img src="images/footer-logo.png" alt="We Madam logo" class="footer-logo" />
+            <p style="color: rgba(244, 236, 216, 0.6); font-size: 0.9rem; max-width: 20rem">
+              A homestyle Bengali kitchen in the heart of Kolkata, a unit of UUC Hospitality.
+              Come home to the taste of a madam&rsquo;s own cooking.
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="social-icon" aria-label="Instagram"><span data-icon="instagram" data-icon-size="18"></span></a>
+              <a href="#" class="social-icon" aria-label="Facebook"><span data-icon="facebook" data-icon-size="18"></span></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#story">Our Story</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h4>Our Units</h4>
+            <ul>
+              <li><a href="index.html">Restaurant &middot; Home</a></li>
+              <li><a href="cafe.html">Café</a></li>
+              <li><a href="banquet.html">Banquet</a></li>
+              <li><a href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>Visit Us</h4>
+            <ul>
+              <li class="d-flex gap-2"><span data-icon="map-pin" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> Ground Floor, Godrej Genesis Building, EN-34, EP &amp; GP Block, Sector V, Bidhannagar, Kolkata 700091</li>
+              <li class="d-flex gap-2"><span data-icon="phone" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> +91 92309 76042</li>
+              <li class="d-flex gap-2"><span data-icon="mail" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> hello@wemadam.in</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 text-center text-sm-start">
+          <p class="mb-0">
+            &copy; <span data-year></span> We Madam All rights reserved. Site
+            built by
+            <a href="https://aswebverse.com/" target="_blank">AS Webverse</a>
+          </p>
+          <p class="font-bengali mb-0">কলকাতার ঐতিহ্যবাহী রান্না</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

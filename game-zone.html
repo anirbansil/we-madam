@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Zone — We Madam</title>
+    <meta
+      name="description"
+      content="Rooftop turf, floodlit courts, and a games lounge — play under the Kolkata sky, compete with friends, and make your own match day."
+    />
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,600;0,700;1,500&family=Jost:wght@300;400;500;600;700&family=Noto+Sans+Bengali:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ================= NAVBAR ================= -->
+    <header class="site-nav">
+      <nav class="navbar navbar-expand-lg container-fluid px-4 px-lg-5">
+        <a class="navbar-brand m-0 p-0" href="index.html">
+          <img src="images/logo.png" alt="We Madam logo" />
+        </a>
+
+        <div class="d-flex align-items-center gap-3 order-lg-3">
+          <a href="contact.html" class="btn-book d-none d-xl-inline-flex">Book a Table</a>
+          <button
+            class="navbar-toggler-custom d-lg-none"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mobileMenu"
+            aria-controls="mobileMenu"
+            aria-expanded="false"
+            aria-label="Toggle menu"
+          >
+            <span data-icon="menu" data-icon-size="28"></span>
+          </button>
+        </div>
+
+        <ul class="navbar-nav mx-auto d-none d-lg-flex flex-row align-items-center order-lg-2">
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="index.html" href="index.html">Home</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle active"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              data-nav-group="cafe.html,banquet.html,game-zone.html"
+              aria-expanded="false"
+              >Our Units</a
+            >
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" data-nav-link="index.html" href="index.html">Restaurant <span class="unit-sub">&middot; Home</span></a></li>
+              <li><a class="dropdown-item" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
+              <li><a class="dropdown-item" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
+              <li><a class="dropdown-item active" data-nav-link="game-zone.html" href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="gallery.html" href="gallery.html">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" data-nav-link="contact.html" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="collapse d-lg-none" id="mobileMenu">
+        <ul class="navbar-nav px-4 pb-4 pt-2">
+          <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Home</a></li>
+          <li class="nav-item">
+            <button class="nav-link units-toggle" type="button" aria-expanded="true" aria-controls="mobileUnitsSublist">
+              Our Units <span class="chev" data-icon="arrow-down" data-icon-size="16"></span>
+            </button>
+            <ul class="units-sublist navbar-nav" id="mobileUnitsSublist">
+              <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Restaurant &middot; Home</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
+              <li class="nav-item"><a class="nav-link" data-nav-link="game-zone.html" href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" data-nav-link="gallery.html" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" data-nav-link="contact.html" href="contact.html">Contact Us</a></li>
+          <li class="pt-3"><a href="contact.html" class="btn-turmeric w-100 justify-content-center">Book a Table</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero" style="min-height: 640px">
+        <div class="hero-media">
+          <img src="images/unit-catering.avif" alt="The turf, lit up at night" />
+          <div class="gradient-v"></div>
+          <div class="gradient-h"></div>
+        </div>
+        <div class="hero-topline"></div>
+        <div class="hero-content" style="padding-top: 6rem">
+          <p class="font-bengali mb-2" style="color: var(--turmeric-400); font-size: 1.125rem" data-reveal="fade-up-sm">
+            খেলার মাঠ
+          </p>
+          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 6rem)" data-reveal="mask-up" data-delay="0.1">
+            Game Zone
+          </h1>
+          <div class="ornament my-4 on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+          <p class="hero-lede text-shadow-md" data-reveal="fade-up" data-delay="0.3">
+            Rooftop turf, floodlit courts, and a games lounge &mdash; play under the Kolkata
+            sky, compete with friends, and make your own match day.
+          </p>
+          <div class="mt-4" data-reveal="fade-up" data-delay="0.45">
+            <a href="#games" class="btn-turmeric">Explore the Zone <span data-icon="arrow-down" data-icon-size="16"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= PLAY UNDER THE LIGHTS ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="split-media" data-reveal="zoom-in">
+                <img src="images/unit-catering.avif" alt="Rooftop turf under floodlights" loading="lazy" />
+                <div class="split-badge" data-reveal="scale-in" data-delay="0.4">
+                  <p class="big">Open</p>
+                  <small>Every Evening</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="eyebrow" data-reveal="fade-up-sm">একটি সুন্দর অভিজ্ঞতা</p>
+              <h2 class="section-title" data-delay="0.08">Play under the lights</h2>
+              <p class="section-subtitle mb-4" data-reveal="fade-up" data-delay="0.15">
+                Rooftop turf, floodlit courts, and a games lounge designed for competition
+                and fun in equal measure. Book a slot, bring your team, or drop in for a
+                pickup game. Floodlights, changing rooms, and a café corner for the breaks
+                between matches.
+              </p>
+              <div class="d-flex flex-wrap gap-4" data-reveal="fade-up" data-delay="0.25">
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Thoughtful hospitality</span>
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Made for memories</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GAMES & ACTIVITIES ================= -->
+      <section id="games" class="bg-ink section-pad position-relative bg-paper-texture">
+        <div class="container position-relative">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">যা অপেক্ষা করছে</p>
+            <h2 class="section-title on-dark" data-delay="0.08">Games &amp; Activities</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
+              Details that make the difference, brought together with the warmth and care
+              you expect from We Madam.
+            </p>
+          </div>
+
+          <div class="row g-4" data-reveal-stagger="0.08">
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Football / Futsal</h3>
+                <p>5-a-side turf matches with floodlights and all-weather surface.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Cricket</h3>
+                <p>Practice nets with optional bowling machine.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Badminton</h3>
+                <p>Indoor courts with professional flooring.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Table Tennis</h3>
+                <p>Well-lit TT tables open all day.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Carrom &amp; Board Games</h3>
+                <p>Indoor games lounge for a slower pace.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Esports Lounge</h3>
+                <p>Gaming consoles and screens for group play.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= INSIDE THE EXPERIENCE ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">ভিতরের ঝলক</p>
+            <h2 class="section-title" data-delay="0.08">Inside the experience</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+          </div>
+          <div class="triptych" data-reveal-stagger="0.1" style="grid-template-columns: 1fr">
+            <div class="frame" style="aspect-ratio: 16/7" data-reveal="scale-in">
+              <img src="images/unit-catering.avif" alt="The turf, lit up at night" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+          <div data-reveal="fade-up">
+            <p class="eyebrow-inline">আপনার ম্যাচের জন্য প্রস্তুত</p>
+            <h2>Make your next match day a little more special.</h2>
+          </div>
+          <div data-reveal="fade-up" data-delay="0.1">
+            <a href="contact.html" class="btn-cta">Book a Slot <span data-icon="arrow-up-right" data-icon-size="16"></span></a>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FACILITIES ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">সুবিধা</p>
+            <h2 class="section-title" data-delay="0.08">Facilities</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle mx-auto" data-reveal="fade-up" data-delay="0.3">Everything you need for a great game &mdash; on the turf and off it.</p>
+          </div>
+          <div class="row g-4" data-reveal-stagger="0.1">
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="activity" data-icon-size="26"></div>
+                <h3>Rooftop Turf</h3>
+                <p>All-weather 5-a-side turf with professional-grade surface.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="lightbulb" data-icon-size="26"></div>
+                <h3>Floodlights</h3>
+                <p>Full floodlight setup for evening and night matches.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="shirt" data-icon-size="26"></div>
+                <h3>Changing Room</h3>
+                <p>Clean changing rooms with lockers.</p>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-3" data-reveal="fade-up">
+              <div class="facility-card">
+                <div class="facility-icon" data-icon="droplet" data-icon-size="26"></div>
+                <h3>Washrooms</h3>
+                <p>Clean washrooms and shower facilities.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= TOURNAMENTS & EVENTS ================= -->
+      <section class="bg-ink section-pad position-relative bg-paper-texture">
+        <div class="container position-relative">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">প্রতিযোগিতা</p>
+            <h2 class="section-title on-dark" data-delay="0.08">Tournaments &amp; Events</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
+              Compete, register your team, and climb the leaderboard. Regular tournaments
+              across all games.
+            </p>
+          </div>
+
+          <div class="row g-4 mb-4" data-reveal-stagger="0.12">
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="trophy" data-icon-size="22"></div>
+                <span class="kicker-sm">Every Saturday</span>
+                <h3>We Madam Futsal Cup</h3>
+                <p>Weekly 5-a-side futsal tournament. Register your team and compete for the trophy.</p>
+                <a href="contact.html" class="link-cta">Register Team <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="trophy" data-icon-size="22"></div>
+                <span class="kicker-sm">Monthly</span>
+                <h3>Corporate League</h3>
+                <p>Corporate teams compete in a round-robin format across football and cricket.</p>
+                <a href="contact.html" class="link-cta">Register Team <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="badge-card">
+                <div class="icon-badge" data-icon="trophy" data-icon-size="22"></div>
+                <span class="kicker-sm">First Sunday of the Month</span>
+                <h3>Open Badminton Tournament</h3>
+                <p>Singles and doubles brackets open to all skill levels.</p>
+                <a href="contact.html" class="link-cta">Register Team <span data-icon="arrow-up-right" data-icon-size="14"></span></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="leaderboard-card" data-reveal="fade-up">
+            <h3>Current Leaderboard</h3>
+            <div class="leaderboard-row">
+              <div class="d-flex align-items-center"><span class="leaderboard-rank">1</span><span class="leaderboard-name">Team Phoenix</span></div>
+              <span class="leaderboard-pts">128 pts</span>
+            </div>
+            <div class="leaderboard-row">
+              <div class="d-flex align-items-center"><span class="leaderboard-rank">2</span><span class="leaderboard-name">Lake Town Strikers</span></div>
+              <span class="leaderboard-pts">112 pts</span>
+            </div>
+            <div class="leaderboard-row">
+              <div class="d-flex align-items-center"><span class="leaderboard-rank">3</span><span class="leaderboard-name">College Street FC</span></div>
+              <span class="leaderboard-pts">96 pts</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="top-line"></div>
+      <div class="container py-5">
+        <div class="row g-5">
+          <div class="col-md-6 col-lg-3">
+            <img src="images/footer-logo.png" alt="We Madam logo" class="footer-logo" />
+            <p style="color: rgba(244, 236, 216, 0.6); font-size: 0.9rem; max-width: 20rem">
+              A homestyle Bengali kitchen in the heart of Kolkata, a unit of UUC Hospitality.
+              Come home to the taste of a madam&rsquo;s own cooking.
+            </p>
+            <div class="d-flex gap-3 mt-3">
+              <a href="#" class="social-icon" aria-label="Instagram"><span data-icon="instagram" data-icon-size="18"></span></a>
+              <a href="#" class="social-icon" aria-label="Facebook"><span data-icon="facebook" data-icon-size="18"></span></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h4>Explore</h4>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="index.html#story">Our Story</a></li>
+              <li><a href="index.html#menu">Menu</a></li>
+              <li><a href="gallery.html">Gallery</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-3 col-lg-3">
+            <h4>Our Units</h4>
+            <ul>
+              <li><a href="index.html">Restaurant &middot; Home</a></li>
+              <li><a href="cafe.html">Café</a></li>
+              <li><a href="banquet.html">Banquet</a></li>
+              <li><a href="game-zone.html">Game Zone</a></li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <h4>Visit Us</h4>
+            <ul>
+              <li class="d-flex gap-2"><span data-icon="map-pin" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> Ground Floor, Godrej Genesis Building, EN-34, EP &amp; GP Block, Sector V, Bidhannagar, Kolkata 700091</li>
+              <li class="d-flex gap-2"><span data-icon="phone" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> +91 92309 76042</li>
+              <li class="d-flex gap-2"><span data-icon="mail" data-icon-size="18" style="color: var(--spice-500); flex-shrink: 0"></span> hello@wemadam.in</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom d-flex flex-column flex-sm-row justify-content-between align-items-center gap-2 text-center text-sm-start">
+          <p class="mb-0">
+            &copy; <span data-year></span> We Madam All rights reserved. Site
+            built by
+            <a href="https://aswebverse.com/" target="_blank">AS Webverse</a>
+          </p>
+          <p class="font-bengali mb-0">কলকাতার ঐতিহ্যবাহী রান্না</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/icons.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

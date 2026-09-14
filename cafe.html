@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gallery — We Madam</title>
+    <title>Café Firefly — We Madam</title>
     <meta
       name="description"
-      content="The colors of our kitchen, our café, our banquet halls, and our rooftop turf — all in one place. Browse by unit."
+      content="Café Firefly — the easy-going side of We Madam. Slow mornings, fragrant lebu cha, and the kind of adda that stretches well past the afternoon."
     />
     <link rel="icon" type="image/png" href="images/favicon.png" />
 
@@ -55,7 +55,7 @@
           </li>
           <li class="nav-item dropdown">
             <a
-              class="nav-link dropdown-toggle"
+              class="nav-link dropdown-toggle active"
               href="#"
               role="button"
               data-bs-toggle="dropdown"
@@ -65,7 +65,7 @@
             >
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" data-nav-link="index.html" href="index.html">Restaurant <span class="unit-sub">&middot; Home</span></a></li>
-              <li><a class="dropdown-item" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
+              <li><a class="dropdown-item active" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
               <li><a class="dropdown-item" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
               <li><a class="dropdown-item" data-nav-link="game-zone.html" href="game-zone.html">Game Zone</a></li>
             </ul>
@@ -83,10 +83,10 @@
         <ul class="navbar-nav px-4 pb-4 pt-2">
           <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Home</a></li>
           <li class="nav-item">
-            <button class="nav-link units-toggle" type="button" aria-expanded="false" aria-controls="mobileUnitsSublist">
+            <button class="nav-link units-toggle" type="button" aria-expanded="true" aria-controls="mobileUnitsSublist">
               Our Units <span class="chev" data-icon="arrow-down" data-icon-size="16"></span>
             </button>
-            <ul class="units-sublist navbar-nav" id="mobileUnitsSublist" hidden>
+            <ul class="units-sublist navbar-nav" id="mobileUnitsSublist">
               <li class="nav-item"><a class="nav-link" data-nav-link="index.html" href="index.html">Restaurant &middot; Home</a></li>
               <li class="nav-item"><a class="nav-link" data-nav-link="cafe.html" href="cafe.html">Café</a></li>
               <li class="nav-item"><a class="nav-link" data-nav-link="banquet.html" href="banquet.html">Banquet</a></li>
@@ -104,72 +104,154 @@
       <!-- ================= HERO ================= -->
       <section class="hero" style="min-height: 640px">
         <div class="hero-media">
-          <img src="images/gallery-thali.avif" alt="A homestyle thali" />
+          <img src="images/unit-cafe.avif" alt="Café Firefly storefront" />
           <div class="gradient-v"></div>
           <div class="gradient-h"></div>
         </div>
         <div class="hero-topline"></div>
         <div class="hero-content" style="padding-top: 6rem">
           <p class="font-bengali mb-2" style="color: var(--turmeric-400); font-size: 1.125rem" data-reveal="fade-up-sm">
-            আমাদের জগৎ
+            সারাদিনের ঠিকানা
           </p>
-          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 5.5rem)" data-reveal="mask-up" data-delay="0.1">
-            Gallery
+          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 6rem)" data-reveal="mask-up" data-delay="0.1">
+            The Café
           </h1>
           <div class="ornament my-4 on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
           <p class="hero-lede text-shadow-md" data-reveal="fade-up" data-delay="0.3">
-            The colors of our kitchen, our café, our banquet halls, and our rooftop turf &mdash;
-            all in one place. Browse by unit.
+            Slow mornings, fragrant lebu cha, and the kind of adda that stretches well past
+            the afternoon. A relaxed ground-floor corner of We Madam, open all day.
           </p>
           <div class="mt-4" data-reveal="fade-up" data-delay="0.45">
-            <a href="#browse" class="btn-turmeric">Browse the Gallery <span data-icon="arrow-down" data-icon-size="16"></span></a>
+            <a href="#find" class="btn-turmeric">Explore the Café <span data-icon="arrow-down" data-icon-size="16"></span></a>
           </div>
         </div>
       </section>
 
-      <!-- ================= A GLIMPSE INSIDE ================= -->
-      <section id="browse" class="bg-cream section-pad paper-grain">
+      <!-- ================= A CORNER FOR THE EVERYDAY ================= -->
+      <section class="bg-cream section-pad paper-grain">
         <div class="container">
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-6">
+              <div class="split-media" data-reveal="zoom-in">
+                <img src="images/unit-cafe.avif" alt="Café Firefly interior" loading="lazy" />
+                <div class="split-badge" data-reveal="scale-in" data-delay="0.4">
+                  <p class="big">Open</p>
+                  <small>All Day, Every Day</small>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <p class="eyebrow" data-reveal="fade-up-sm">একটি সুন্দর অভিজ্ঞতা</p>
+              <h2 class="section-title" data-delay="0.08">A corner for the everyday</h2>
+              <p class="section-subtitle mb-4" data-reveal="fade-up" data-delay="0.15">
+                The Café is the easy-going side of We Madam &mdash; a space designed for long
+                conversations, quiet reading, and unhurried meals. Freshly brewed lebu cha,
+                all-day breakfast, light snacks, and a rotating shelf of books and board games.
+                Settle in.
+              </p>
+              <div class="d-flex flex-wrap gap-4" data-reveal="fade-up" data-delay="0.25">
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Thoughtful hospitality</span>
+                <span class="check-item"><span data-icon="check-circle" data-icon-size="18"></span> Made for memories</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= WHAT YOU'LL FIND ================= -->
+      <section id="find" class="bg-ink section-pad position-relative bg-paper-texture">
+        <div class="container position-relative">
           <div class="text-center mx-auto mb-5" style="max-width: 640px">
-            <p class="eyebrow" data-reveal="fade-up-sm">এক ঝলক</p>
-            <h2 class="section-title" data-reveal="mask-up" data-delay="0.08">A Glimpse Inside</h2>
-            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
-            <p class="section-subtitle mx-auto" data-reveal="fade-up" data-delay="0.3">
-              Tab through each unit to see the spaces, the plates, and the people that make
-              We Madam what it is.
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">যা অপেক্ষা করছে</p>
+            <h2 class="section-title on-dark" data-delay="0.08">What you&rsquo;ll find</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
+            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
+              Details that make the difference, brought together with the warmth and care
+              you expect from We Madam.
             </p>
           </div>
 
-          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
-            <button class="unit-tab active" data-unit-tab="restaurant">Restaurant</button>
-            <button class="unit-tab" data-unit-tab="cafe">Café</button>
-            <button class="unit-tab" data-unit-tab="banquet">Banquet</button>
-            <button class="unit-tab" data-unit-tab="gamezone">Game Zone</button>
+          <div class="row g-4" data-reveal-stagger="0.08">
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Lebu Cha &amp; Coffee</h3>
+                <p>Hand-brewed lebu cha and specialty coffee, made fresh through the day.</p>
+                <div class="foot">All day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>All-Day Breakfast</h3>
+                <p>Egg, toast, and traditional breakfast plates served from morning to evening.</p>
+                <div class="foot">Served all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Reading Corner</h3>
+                <p>A quiet shelf of books and board games for slow, unhurried afternoons.</p>
+                <div class="foot">Free for guests</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Free Wi-Fi &amp; Power</h3>
+                <p>Comfortable seating, reliable Wi-Fi, and plenty of power points &mdash; the café works for work, too.</p>
+                <div class="foot">Open all day</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Seasonal Specials</h3>
+                <p>A rotating menu of seasonal drinks and bites &mdash; nolen gur coffee in winter, aam pora in summer.</p>
+                <div class="foot">Ask for today&rsquo;s special</div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
+              <div class="detail-card">
+                <span class="detail-tag">&#10047; We Madam Detail</span>
+                <h3>Light Snacks &amp; Sandwiches</h3>
+                <p>Fresh sandwiches, rolls, and baked goods &mdash; light bites that pair perfectly with a long conversation.</p>
+                <div class="foot">Made fresh</div>
+              </div>
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="unit-gallery-row gallery-page-grid active" data-unit-panel="restaurant">
-            <div class="gallery-page-item"><img src="images/gallery-thali.avif" alt="A homestyle thali" loading="lazy" /><div class="scrim"></div><div class="caption">A homestyle thali</div></div>
-            <div class="gallery-page-item"><img src="images/dish-ilish.avif" alt="Shorshe Ilish" loading="lazy" /><div class="scrim"></div><div class="caption">Shorshe Ilish</div></div>
-            <div class="gallery-page-item"><img src="images/dish-mangsho.avif" alt="Kosha Mangsho" loading="lazy" /><div class="scrim"></div><div class="caption">Kosha Mangsho</div></div>
-            <div class="gallery-page-item"><img src="images/dish-bhetki.avif" alt="Bhapa Bhetki" loading="lazy" /><div class="scrim"></div><div class="caption">Bhapa Bhetki</div></div>
-            <div class="gallery-page-item"><img src="images/gallery-biryani.avif" alt="Chicken biryani in a brass bowl" loading="lazy" /><div class="scrim"></div><div class="caption">Chicken biryani</div></div>
-            <div class="gallery-page-item"><img src="images/gallery-dal.avif" alt="Dal makhani with a cream swirl" loading="lazy" /><div class="scrim"></div><div class="caption">Dal makhani</div></div>
+      <!-- ================= INSIDE THE EXPERIENCE ================= -->
+      <section class="bg-cream section-pad paper-grain">
+        <div class="container">
+          <div class="text-center mx-auto mb-5" style="max-width: 640px">
+            <p class="eyebrow" data-reveal="fade-up-sm">ভিতরের ঝলক</p>
+            <h2 class="section-title" data-delay="0.08">Inside the experience</h2>
+            <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
           </div>
-
-          <div class="unit-gallery-row gallery-page-grid" data-unit-panel="cafe">
-            <div class="gallery-page-item"><img src="images/unit-cafe.avif" alt="Café Firefly storefront" loading="lazy" /><div class="scrim"></div><div class="caption">Café Firefly, ground floor</div></div>
-            <div class="gallery-page-item"><img src="images/gallery-sweet.avif" alt="Sweet treats at the counter" loading="lazy" /><div class="scrim"></div><div class="caption">Fresh from the counter</div></div>
-            <div class="gallery-page-item"><img src="images/dish-doi.avif" alt="Mishti doi served with cha" loading="lazy" /><div class="scrim"></div><div class="caption">Something sweet with your cha</div></div>
+          <div class="triptych" data-reveal-stagger="0.1">
+            <div class="frame wide" data-reveal="scale-in">
+              <img src="images/unit-cafe.avif" alt="Café Firefly, ground floor" loading="lazy" />
+            </div>
+            <div class="frame" data-reveal="scale-in">
+              <img src="images/dish-doi.avif" alt="Mishti doi served with cha" loading="lazy" />
+            </div>
           </div>
+        </div>
+      </section>
 
-          <div class="unit-gallery-row gallery-page-grid" data-unit-panel="banquet">
-            <div class="gallery-page-item"><img src="images/unit-banquet.avif" alt="Our banquet hall" loading="lazy" /><div class="scrim"></div><div class="caption">Ready for the celebration</div></div>
-            <div class="gallery-page-item"><img src="images/gallery-city.avif" alt="Heritage architecture of Kolkata" loading="lazy" /><div class="scrim"></div><div class="caption">Kolkata's heritage, in every detail</div></div>
-            <div class="gallery-page-item"><img src="images/dish-mangsho.avif" alt="A banquet spread" loading="lazy" /><div class="scrim"></div><div class="caption">A banquet spread</div></div>
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+          <div data-reveal="fade-up">
+            <p class="eyebrow-inline">আপনার জন্য অপেক্ষা করছি</p>
+            <h2>Make your next visit a little more special.</h2>
           </div>
-
-          <div class="unit-gallery-row gallery-page-grid" data-unit-panel="gamezone" style="grid-template-columns: 1fr">
-            <div class="gallery-page-item" style="aspect-ratio: 16/8"><img src="images/unit-catering.avif" alt="The turf, lit up at night" loading="lazy" /><div class="scrim"></div><div class="caption">The turf, lit up at night</div></div>
+          <div data-reveal="fade-up" data-delay="0.1">
+            <a href="contact.html" class="btn-cta">Reserve a Café Table <span data-icon="arrow-up-right" data-icon-size="16"></span></a>
           </div>
         </div>
       </section>
