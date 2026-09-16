@@ -104,27 +104,6 @@ a {
 }
 .bg-cream {
   background-color: var(--cream-100);
-  position: relative;
-}
-.bg-cream::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 44px;
-  background-image: url("../images/kolka-divider.svg");
-  background-repeat: repeat-x;
-  background-size: 52px 44px;
-  background-position: top center;
-  opacity: 0.4;
-  pointer-events: none;
-}
-@media (max-width: 767.98px) {
-  .bg-cream::after {
-    height: 30px;
-    background-size: 36px 30px;
-  }
 }
 
 .section-pad {
