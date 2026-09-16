@@ -104,6 +104,25 @@ a {
 }
 .bg-cream {
   background-color: var(--cream-100);
+  position: relative;
+}
+.kolka-divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  max-height: 90px;
+  object-fit: cover;
+  object-position: top center;
+  opacity: 0.4;
+  pointer-events: none;
+  user-select: none;
+}
+@media (max-width: 767.98px) {
+  .kolka-divider {
+    max-height: 46px;
+  }
 }
 
 .section-pad {
