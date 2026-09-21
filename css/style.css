@@ -137,24 +137,24 @@ a {
   z-index: 0;
 }
 .illus-window-lady {
-  left: -30px;
-  bottom: -20px;
-  width: 280px;
+  left: 40px;
+  top: 750px;
+  width: 350px;
 }
 .illus-tray-lady {
-  right: 6%;
-  top: 58%;
-  width: 190px;
+  right: 2%;
+  top: 64%;
+  width: 300px;
 }
 .illus-reading-lady {
-  right: -20px;
-  bottom: -10px;
-  width: 320px;
+  right: 40px;
+  bottom: 540px;
+  width: 80%;
 }
 .illus-kolkata-corner {
-  left: -10px;
-  top: -10px;
-  width: 320px;
+  left: 50px;
+  top: 60px;
+  width: 100%;
 }
 @media (max-width: 767.98px) {
   .section-illustration {
@@ -1479,7 +1479,9 @@ main section[id] {
     opacity: 0;
     transform: translateY(-8px);
     pointer-events: none;
-    transition: opacity 0.25s ease, transform 0.25s ease;
+    transition:
+      opacity 0.25s ease,
+      transform 0.25s ease;
   }
   /* Invisible strip bridging the gap between the toggle and the menu, so
      hover doesn't drop while the cursor crosses it. */
