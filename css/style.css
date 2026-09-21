@@ -50,6 +50,7 @@
 
 html {
   scroll-behavior: smooth;
+  scrollbar-color: var(--turmeric-500) var(--ink-950);
 }
 
 body {
@@ -86,10 +87,10 @@ a {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: var(--cream-100);
+  background: var(--ink-950);
 }
 ::-webkit-scrollbar-thumb {
-  background: var(--spice-400);
+  background: var(--turmeric-500);
   border-radius: 999px;
 }
 
