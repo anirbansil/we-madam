@@ -125,6 +125,42 @@ a {
   }
 }
 
+.section-illustration {
+  position: absolute;
+  width: 260px;
+  max-width: 32%;
+  height: auto;
+  opacity: 0.3;
+  pointer-events: none;
+  user-select: none;
+  z-index: 0;
+}
+.illus-window-lady {
+  left: -30px;
+  bottom: -20px;
+  width: 280px;
+}
+.illus-tray-lady {
+  right: 6%;
+  top: 58%;
+  width: 190px;
+}
+.illus-reading-lady {
+  right: -20px;
+  bottom: -10px;
+  width: 320px;
+}
+.illus-kolkata-corner {
+  left: -10px;
+  top: -10px;
+  width: 320px;
+}
+@media (max-width: 767.98px) {
+  .section-illustration {
+    display: none;
+  }
+}
+
 .section-pad {
   padding-block: 6rem;
 }
