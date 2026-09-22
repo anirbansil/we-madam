@@ -137,7 +137,7 @@ a {
   z-index: 0;
 }
 .illus-window-lady {
-  left: -30px;
+  left: 0;
   bottom: -20px;
   width: 280px;
 }
@@ -147,12 +147,12 @@ a {
   width: 190px;
 }
 .illus-reading-lady {
-  right: -20px;
+  right: 0;
   bottom: -10px;
   width: 320px;
 }
 .illus-kolkata-corner {
-  left: -10px;
+  left: 0;
   top: -10px;
   width: 320px;
 }
@@ -749,7 +749,7 @@ a {
 .story-badge {
   position: absolute;
   bottom: -1.5rem;
-  right: -1rem;
+  right: 0;
   background: var(--ink-950);
   border-radius: 1rem;
   padding: 1.5rem 2rem;
@@ -1456,9 +1456,16 @@ main section[id] {
 }
 
 /* ---------- nav dropdown (Our Units) ---------- */
+/* Neutralize Bootstrap's default triangle caret on the ::after pseudo-element,
+   leaving only the shared .nav-link::after underline (no more icon+underline
+   fighting over the same pseudo-element / rotating the underline itself). */
 .site-nav .nav-item.dropdown .dropdown-toggle::after {
+  border: 0;
+  margin-left: 0;
+}
+.site-nav .nav-item.dropdown .dropdown-toggle .chev {
   margin-left: 0.4rem;
-  vertical-align: 0.1em;
+  vertical-align: -0.1em;
   transition: transform 0.3s ease;
 }
 .site-nav .dropdown-menu {
@@ -1498,7 +1505,7 @@ main section[id] {
     transform: translateY(0);
     pointer-events: auto;
   }
-  .site-nav .nav-item.dropdown:hover > .dropdown-toggle::after {
+  .site-nav .nav-item.dropdown:hover > .dropdown-toggle .chev {
     transform: rotate(180deg);
   }
 }
@@ -1652,7 +1659,7 @@ main section[id] {
 .split-badge {
   position: absolute;
   bottom: -1.5rem;
-  right: -1rem;
+  right: 0;
   background: var(--ink-950);
   border-radius: 1rem;
   padding: 1.25rem 1.75rem;
