@@ -113,7 +113,7 @@
           <p class="font-bengali mb-2" style="color: var(--turmeric-400); font-size: 1.125rem" data-reveal="fade-up-sm">
             সারাদিনের ঠিকানা
           </p>
-          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 6rem)" data-reveal="mask-up" data-delay="0.1">
+          <h1 class="hero-title font-display text-shadow-lg" style="font-size: clamp(3rem, 8vw, 6rem)" data-delay="0.1">
             The Café
           </h1>
           <div class="ornament my-4 on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
@@ -159,68 +159,706 @@
         </div>
       </section>
 
-      <!-- ================= WHAT YOU'LL FIND ================= -->
-      <section id="find" class="bg-ink section-pad position-relative bg-paper-texture">
+      <section
+        id="menu"
+        class="bg-ink section-pad position-relative bg-paper-texture"
+      >
         <div class="container position-relative">
           <div class="text-center mx-auto mb-5" style="max-width: 640px">
-            <p class="eyebrow on-dark" data-reveal="fade-up-sm">যা অপেক্ষা করছে</p>
-            <h2 class="section-title on-dark" data-delay="0.08">What you&rsquo;ll find</h2>
-            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
-            <p class="section-subtitle on-dark mx-auto" data-reveal="fade-up" data-delay="0.3">
-              Details that make the difference, brought together with the warmth and care
-              you expect from We Madam.
+            <p class="eyebrow on-dark" data-reveal="fade-up-sm">আমাদের মেনু</p>
+            <h2 class="section-title on-dark" data-delay="0.08">The Menu</h2>
+            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25">
+              <span>❋</span>
+            </div>
+            <p
+              class="section-subtitle on-dark mx-auto"
+              data-reveal="fade-up"
+              data-delay="0.3"
+            >
+              From the river&rsquo;s catch to the madam&rsquo;s own pot &mdash;
+              a journey through the five flavors of Bengal.
             </p>
           </div>
 
-          <div class="row g-4" data-reveal-stagger="0.08">
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>Lebu Cha &amp; Coffee</h3>
-                <p>Hand-brewed lebu cha and specialty coffee, made fresh through the day.</p>
-                <div class="foot">All day</div>
+          <div class="d-flex flex-wrap justify-content-center gap-3 mb-5">
+            <button
+              class="menu-tab active"
+              data-menu-tab="starters"
+              data-menu-word="শুরু"
+            >
+              Starters &amp; Snacks
+            </button>
+            <button class="menu-tab" data-menu-tab="meat" data-menu-word="মাংস">
+              Mutton &amp; Chicken
+            </button>
+            <button class="menu-tab" data-menu-tab="fish" data-menu-word="মাছ">
+              Fish &mdash; The Heart of Bengal
+            </button>
+            <button
+              class="menu-tab"
+              data-menu-tab="veg"
+              data-menu-word="নিরামিষ"
+            >
+              Vegetarian Delights
+            </button>
+            <button
+              class="menu-tab"
+              data-menu-tab="sweets"
+              data-menu-word="মিষ্টি"
+            >
+              Mishti &mdash; Sweets
+            </button>
+          </div>
+
+          <div class="row g-4 menu-panel active" data-menu-panel="starters">
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Mochar Chop</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      মোচার চপ
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Banana flower croquettes with green chili and peanuts,
+                      crumb-fried to golden perfection.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;180</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>All-Day Breakfast</h3>
-                <p>Egg, toast, and traditional breakfast plates served from morning to evening.</p>
-                <div class="foot">Served all day</div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Beguni</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      বেগুনি
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Thinly sliced eggplant bathed in gram flour batter,
+                      deep-fried until crisp &mdash; a monsoon evening classic.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;120</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>Reading Corner</h3>
-                <p>A quiet shelf of books and board games for slow, unhurried afternoons.</p>
-                <div class="foot">Free for guests</div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Fish Fry</h3>
+                      <span class="menu-tag">Signature</span>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      মাছের ফ্রাই
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Bhetki fillet marinated in green chili and lime, coated in
+                      golden breadcrumbs &mdash; the iconic Kolkata street
+                      snack.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;260</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>Free Wi-Fi &amp; Power</h3>
-                <p>Comfortable seating, reliable Wi-Fi, and plenty of power points &mdash; the café works for work, too.</p>
-                <div class="foot">Open all day</div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Aloor Dom</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      আলুর দম
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Baby potatoes simmered in a rich, spiced yogurt gravy
+                      &mdash; the beloved companion to luchis.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;160</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>Seasonal Specials</h3>
-                <p>A rotating menu of seasonal drinks and bites &mdash; nolen gur coffee in winter, aam pora in summer.</p>
-                <div class="foot">Ask for today&rsquo;s special</div>
+          </div>
+
+          <div class="row g-4 menu-panel" data-menu-panel="meat">
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Kosha Mangsho</h3>
+                      <span class="menu-tag">Signature</span>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      কষা মাংস
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Mutton slow-cooked for hours in mustard oil with whole
+                      spices until dark, thick, and luxurious.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;420</p>
+                </div>
               </div>
             </div>
-            <div class="col-md-6 col-lg-4" data-reveal="fade-up">
-              <div class="detail-card">
-                <span class="detail-tag">&#10047; We Madam Detail</span>
-                <h3>Light Snacks &amp; Sandwiches</h3>
-                <p>Fresh sandwiches, rolls, and baked goods &mdash; light bites that pair perfectly with a long conversation.</p>
-                <div class="foot">Made fresh</div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Chicken Rezala</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      রেজালা
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Chicken simmered in a mild, creamy white gravy scented
+                      with cardamom and rosewater.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;340</p>
+                </div>
               </div>
             </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Mutton Biryani</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      বিরিয়ানি
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Fragrant long-grain rice layered with tender mutton,
+                      potato, and a whisper of saffron.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;380</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Chicken Kosha</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      চিকেন কষা
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Bone-in chicken, dry-roasted spices, and slow patience
+                      &mdash; an everyday Bengali favorite.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;300</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 menu-panel" data-menu-panel="fish">
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Shorshe Ilish</h3>
+                      <span class="menu-tag">Seasonal</span>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      সরষে ইলিশ
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Hilsa fish in a sharp mustard and green chili gravy
+                      &mdash; the taste of monsoon in Bengal.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;520</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Bhapa Bhetki</h3>
+                      <span class="menu-tag">Signature</span>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      ভাপা ভেটকি
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Silky Bhetki steamed in mustard, coconut, and green chili,
+                      wrapped in banana leaf.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;360</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Chingri Malai Curry</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      চিংড়ি মালাইকারি
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Plump prawns in a delicate coconut-milk curry, lightly
+                      spiced and deeply comforting.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;450</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot nonveg"></span>
+                      <h3>Doi Maach</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      দই মাছ
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Fish simmered gently in a yogurt-based gravy &mdash;
+                      subtle, tangy, and wonderfully mild.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;320</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 menu-panel" data-menu-panel="veg">
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Shukto</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      শুক্তো
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      A bittersweet medley of seasonal vegetables in a light
+                      milk-and-mustard gravy.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;180</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Dhokar Dalna</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      ঢোকার ডালনা
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Steamed lentil cakes simmered in a warm, spiced tomato
+                      gravy.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;220</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Chholar Dal</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      ছোলার ডাল
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Bengal gram cooked sweet-and-savory with coconut shavings
+                      and bay leaf.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;150</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Labra</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      লাবড়া
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      A festive mixed-vegetable curry, slow-cooked the way pujo
+                      bhog is made.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;170</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="row g-4 menu-panel" data-menu-panel="sweets">
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Mishti Doi</h3>
+                      <span class="menu-tag">House Special</span>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      মিষ্টি দই
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Sweet yogurt fermented overnight in earthen pots for a
+                      caramelized depth.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;90</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Rasgulla</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      রসগোল্লা
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Soft cottage-cheese balls in a light, fragrant sugar
+                      syrup.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;80</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Sandesh</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      সন্দেশ
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Delicately sweetened cottage cheese, shaped and finished
+                      by hand.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;100</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="menu-card">
+                <div
+                  class="d-flex justify-content-between align-items-start gap-3"
+                >
+                  <div>
+                    <div class="d-flex align-items-center gap-3 mb-1 flex-wrap">
+                      <span class="veg-dot"></span>
+                      <h3>Payesh</h3>
+                    </div>
+                    <p
+                      class="font-bengali mb-2"
+                      style="color: var(--spice-400); font-size: 0.9rem"
+                    >
+                      পায়েস
+                    </p>
+                    <p
+                      style="
+                        color: rgba(224, 173, 123, 0.6);
+                        font-size: 0.9rem;
+                        line-height: 1.6;
+                      "
+                    >
+                      Slow-simmered rice pudding with jaggery, cardamom, and
+                      cashew.
+                    </p>
+                  </div>
+                  <p class="price mb-0">&#8377;120</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <p
+              class="font-bengali"
+              data-menu-word-target
+              style="font-size: 3rem; color: rgba(144, 85, 42, 0.4)"
+            >
+              শুরু
+            </p>
           </div>
         </div>
       </section>
@@ -234,141 +872,7 @@
             <h2 class="section-title" data-delay="0.08">Inside the experience</h2>
             <div class="ornament" data-reveal="fade" data-delay="0.25"><span>&#10047;</span></div>
           </div>
-          <div class="triptych" data-reveal-stagger="0.1">
-            <div class="frame wide" data-reveal="scale-in">
-              <img src="images/unit-cafe.avif" alt="Café Firefly, ground floor" loading="lazy" />
-            </div>
-            <div class="frame" data-reveal="scale-in">
-              <img src="images/dish-doi.avif" alt="Mishti doi served with cha" loading="lazy" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= CTA BANNER ================= -->
-      <section class="cta-banner">
-        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
-          <div data-reveal="fade-up">
-            <p class="eyebrow-inline">আপনার জন্য অপেক্ষা করছি</p>
-            <h2>Make your next visit a little more special.</h2>
-          </div>
-          <div data-reveal="fade-up" data-delay="0.1">
-            <a href="contact.html" class="btn-cta">Reserve a Café Table <span data-icon="arrow-up-right" data-icon-size="16"></span></a>
-          </div>
-        </div>
-      </section>
-      <!-- ================= STORY ================= -->
-      <section
-        id="story"
-        class="bg-cream section-pad paper-grain position-relative overflow-hidden"
-      >
-        <img src="images/kolka-3.png" class="kolka-divider" alt="" aria-hidden="true" />
-        <div class="story-watermark font-bengali" style="top: 2rem; left: 2rem">
-          ক
-        </div>
-        <div
-          class="story-watermark font-bengali"
-          style="bottom: 2rem; right: 2rem"
-        >
-          ল
-        </div>
-
-        <div class="container position-relative">
-          <div class="row g-4 align-items-center">
-            <div class="col-lg-6">
-              <div class="story-media" data-reveal="zoom-in">
-                <img
-                  src="images/story-kolkata.avif"
-                  alt="Kolkata's yellow taxi in front of a heritage building"
-                  loading="lazy"
-                />
-                <div
-                  class="story-badge"
-                  data-reveal="scale-in"
-                  data-delay="0.4"
-                >
-                  <p class="font-display big">Ghar</p>
-                  <small>The taste of<br />home</small>
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-6">
-              <p class="eyebrow" data-reveal="fade-up-sm">আমাদের গল্প</p>
-              <h2 class="section-title" data-delay="0.08">
-                A Story Cooked in <em class="text-spice">Memories</em>
-              </h2>
-              <div
-                class="text-ink-700"
-                style="
-                  font-size: 1.1rem;
-                  line-height: 1.8;
-                  color: var(--ink-700);
-                "
-              >
-                <p data-reveal="fade-up" data-delay="0.15">
-                  It began with a simple idea &mdash; no one cooks quite like
-                  your madam. Every recipe at We Madam is drawn from real
-                  kitchens: mustard oil crackling at just the right temperature,
-                  fish chosen at dawn, and the kind of patience that only home
-                  cooking understands.
-                </p>
-                <p data-reveal="fade-up" data-delay="0.24">
-                  As a unit of UUC Hospitality, we still cook the slow way. The
-                  kosha mangsho simmers for hours. The mishti doi ferments
-                  overnight in earthen pots. Nothing is rushed, because memory
-                  cannot be.
-                </p>
-                <p data-reveal="fade-up" data-delay="0.33">
-                  We are not a restaurant. We are a <em>ghar</em> &mdash; a home
-                  &mdash; where every plate carries the weight of a Sunday
-                  lunch, the laughter of a joint family, and the quiet pride of
-                  a cuisine that was always meant to be shared.
-                </p>
-              </div>
-              <div
-                class="d-flex align-items-center gap-3 mt-4"
-                data-reveal="fade"
-                data-delay="0.4"
-              >
-                <div class="divider-line flex-grow-1"></div>
-                <span class="font-bengali text-spice fs-4">বাড়ি</span>
-                <span
-                  style="
-                    color: var(--ink-500);
-                    font-size: 0.85rem;
-                    letter-spacing: 0.15em;
-                    text-transform: uppercase;
-                  "
-                  >Home</span
-                >
-                <div class="divider-line flex-grow-1"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- ================= GALLERY (preview) ================= -->
-      <section id="gallery" class="bg-ink section-pad position-relative">
-        <div class="container">
-          <div class="text-center mx-auto mb-5" style="max-width: 640px">
-            <p class="eyebrow on-dark" data-reveal="fade-up-sm">আমাদের জগৎ</p>
-            <h2 class="section-title on-dark" data-delay="0.08">
-              A Glimpse Inside
-            </h2>
-            <div class="ornament on-dark" data-reveal="fade" data-delay="0.25">
-              <span>❋</span>
-            </div>
-            <p
-              class="section-subtitle on-dark mx-auto"
-              data-reveal="fade-up"
-              data-delay="0.3"
-            >
-              The colors of our kitchen, the streets that raised us, and the
-              plates that carry our story.
-            </p>
-          </div>
-
+          
           <div class="gallery-grid" data-reveal-stagger="0.08">
             <div class="gallery-item span-2 span-2row" data-reveal="scale-in">
               <img
@@ -458,12 +962,32 @@
         </div>
       </section>
 
+      <!-- ================= CTA BANNER ================= -->
+      <section class="cta-banner">
+        <div class="container d-flex flex-column flex-md-row align-items-md-center justify-content-between gap-4">
+          <div data-reveal="fade-up">
+            <p class="eyebrow-inline">আপনার জন্য অপেক্ষা করছি</p>
+            <h2>Make your next visit a little more special.</h2>
+          </div>
+          <div data-reveal="fade-up" data-delay="0.1">
+            <a href="contact.html" class="btn-cta">Reserve a Café Table <span data-icon="arrow-up-right" data-icon-size="16"></span></a>
+          </div>
+        </div>
+      </section>
+
+
       <!-- ================= WHY US ================= -->
       <section
         id="why-us"
         class="bg-cream section-pad paper-grain position-relative"
       >
         <img src="images/kolka-4.png" class="kolka-divider" alt="" aria-hidden="true" />
+        <img
+          src="images/illus-reading-lady.png"
+          class="section-illustration illus-reading-lady"
+          alt=""
+          aria-hidden="true"
+        />
         <div class="container position-relative">
           <div class="text-center mx-auto mb-5" style="max-width: 640px">
             <p class="eyebrow" data-reveal="fade-up-sm">কেন আমরা</p>
@@ -963,7 +1487,13 @@
         id="location"
         class="bg-cream section-pad paper-grain position-relative"
       >
-        <img src="images/kolka-6.png" class="kolka-divider" alt="" aria-hidden="true" />
+        <!-- <img src="images/kolka-6.png" class="kolka-divider" alt="" aria-hidden="true" /> -->
+        <img
+          src="images/illus-kolkata-corner.png"
+          class="section-illustration illus-kolkata-corner"
+          alt=""
+          aria-hidden="true"
+        />
         <div class="container position-relative">
           <div class="text-center mx-auto mb-5" style="max-width: 640px">
             <p class="eyebrow" data-reveal="fade-up-sm">আমাদের ঠিকানা</p>
